@@ -37,6 +37,19 @@
       </div>
 
       <div class="inputs-row inputs-row--four">
+
+        <div class="field-with-prefix field--price" [class.field-with-prefix--invalid]="shouldShowFieldInvalid('priceDollars')">
+          <span class="field-prefix">$</span>
+          <input
+            type="number"
+            min="0"
+            step="0.01"
+            formControlName="priceDollars"
+            placeholder="Dólares"
+            aria-label="Precio en dólares"
+          />
+        </div>
+
       <div class="field-with-prefix field--price">
         <span class="field-prefix">S/</span>
         <input
