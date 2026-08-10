@@ -517,6 +517,8 @@ export class NewPropertyDialogComponent implements AfterViewChecked, OnDestroy {
        title: property.title,
        priceDollars: String(property.priceDollars),
        priceSoles: property.priceSoles === null || property.priceSoles === undefined ? '' : String(property.priceSoles),
+       secondPriceDollars: property.secondPriceDollars === null || property.secondPriceDollars === undefined ? '' : String(property.secondPriceDollars),
+       secondPriceSoles: property.secondPriceSoles === null || property.secondPriceSoles === undefined ? '' : String(property.secondPriceSoles),
        address: property.address,
        department: property.department,
        district: property.district ?? '',
