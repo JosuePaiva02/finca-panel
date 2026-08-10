@@ -55,6 +55,8 @@ export interface CreatePropertyRequest {
   title: string;
   priceDollars: number;
   priceSoles: number | null;
+  secondPriceDollars?: number | null;
+  secondPriceSoles?: number | null;
   department: Department;
   district: District | null;
   address: string;
@@ -82,6 +84,8 @@ export interface UpdatePropertyRequest {
   title: string;
   priceDollars: number;
   priceSoles: number | null;
+  secondPriceDollars?: number | null;
+  secondPriceSoles?: number | null;
   department: Department;
   district: District | null;
   address: string;
@@ -111,6 +115,8 @@ export interface PropertyResource extends BaseResource {
   title: string;
   priceDollars: number;
   priceSoles: number | null;
+  secondPriceDollars?: number | null;
+  secondPriceSoles?: number | null;
   department: Department;
   district: District | null;
   address: string;

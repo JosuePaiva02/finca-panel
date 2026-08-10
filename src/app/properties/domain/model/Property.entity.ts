@@ -12,6 +12,8 @@ export interface PropertyEntityProps {
   title: string;
   priceDollars: number;
   priceSoles?: number | null;
+  secondPriceDollars?: number | null;
+  secondPriceSoles?: number | null;
   department: Department;
   district?: District | null;
   address: string;
@@ -38,6 +40,8 @@ export class PropertyEntity {
   title: string;
   priceDollars: number;
   priceSoles: number | null;
+  secondPriceDollars: number | null;
+  secondPriceSoles: number | null;
   department: Department;
   district: District | null;
   address: string;
@@ -64,6 +68,8 @@ export class PropertyEntity {
     this.title = props.title;
     this.priceDollars = props.priceDollars;
     this.priceSoles = props.priceSoles ?? null;
+    this.secondPriceDollars = props.secondPriceDollars ?? null;
+    this.secondPriceSoles = props.secondPriceSoles ?? null;
     this.department = props.department;
     this.district = props.district ?? null;
     this.address = props.address;

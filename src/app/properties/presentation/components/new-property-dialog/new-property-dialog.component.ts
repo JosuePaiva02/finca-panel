@@ -92,6 +92,8 @@ export class NewPropertyDialogComponent implements AfterViewChecked, OnDestroy {
      title: ['', [Validators.required, Validators.maxLength(100)]],
      priceDollars: ['', [Validators.required, Validators.min(0.01)]],
      priceSoles: ['', [Validators.min(0.01)]],
+     secondPriceDollars: ['', [Validators.min(0.01)]],
+     secondPriceSoles: ['', [Validators.min(0.01)]],
      address: ['', [Validators.required, Validators.maxLength(200)]],
      department: ['' as Department | '', [Validators.required]],
      district: ['' as District | '', []],
@@ -297,6 +299,16 @@ export class NewPropertyDialogComponent implements AfterViewChecked, OnDestroy {
       ? null
       : Number(rawPriceSoles);
 
+    const rawSecondPriceDollars = this.form.controls.secondPriceDollars.value;
+    const secondPriceDollars = rawSecondPriceDollars === '' || rawSecondPriceDollars === null
+      ? null
+      : Number(rawSecondPriceDollars);
+
+    const rawSecondPriceSoles = this.form.controls.secondPriceSoles.value;
+    const secondPriceSoles = rawSecondPriceSoles === '' || rawSecondPriceSoles === null
+      ? null
+      : Number(rawSecondPriceSoles);
+
     const selectedDepartment = this.form.controls.department.value;
     if (!selectedDepartment) {
       this.errorMessage = 'Debes seleccionar un departamento.';
@@ -408,6 +420,8 @@ export class NewPropertyDialogComponent implements AfterViewChecked, OnDestroy {
            title,
            priceDollars,
            priceSoles,
+           secondPriceDollars,
+           secondPriceSoles,
            department,
            district,
            address,
