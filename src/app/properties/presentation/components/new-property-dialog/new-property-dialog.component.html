@@ -25,28 +25,18 @@
       </div>
     </div>
 
-    <div class="inputs-row inputs-row--three">
-      <div class="field field--title" [class.field--invalid]="shouldShowFieldInvalid('address')">
-        <input
-          type="text"
-          formControlName="address"
-          placeholder="Dirección"
-          aria-label="Dirección"
-        />
+      <div class="inputs-row inputs-row--single">
+        <div class="field field--full" [class.field--invalid]="shouldShowFieldInvalid('address')">
+          <input
+            type="text"
+            formControlName="address"
+            placeholder="Dirección"
+            aria-label="Dirección"
+          />
+        </div>
       </div>
 
-      <div class="field-with-prefix field--price" [class.field-with-prefix--invalid]="shouldShowFieldInvalid('priceDollars')">
-        <span class="field-prefix">$</span>
-        <input
-          type="number"
-          min="0"
-          step="0.01"
-          formControlName="priceDollars"
-          placeholder="Dólares"
-          aria-label="Precio en dólares"
-        />
-      </div>
-
+      <div class="inputs-row inputs-row--four">
       <div class="field-with-prefix field--price">
         <span class="field-prefix">S/</span>
         <input
@@ -58,7 +48,31 @@
           aria-label="Precio en soles"
         />
       </div>
-    </div>
+
+      <div class="field-with-prefix field--price">
+        <span class="field-prefix">$</span>
+        <input
+          type="number"
+          min="0"
+          step="0.01"
+          formControlName="secondPriceDollars"
+          placeholder="Dólares (2)"
+          aria-label="Segundo precio en dólares"
+        />
+      </div>
+
+      <div class="field-with-prefix field--price">
+        <span class="field-prefix">S/</span>
+        <input
+          type="number"
+          min="0"
+          step="0.01"
+          formControlName="secondPriceSoles"
+          placeholder="Soles (2)"
+          aria-label="Segundo precio en soles"
+        />
+      </div>
+      </div>
 
     <div class="inputs-row inputs-row--four">
       <div class="field field--select" [class.field--invalid]="shouldShowFieldInvalid('department')">

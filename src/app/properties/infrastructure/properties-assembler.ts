@@ -43,6 +43,8 @@ export class PropertiesAssembler
       title: resource.title,
       priceDollars: resource.priceDollars,
       priceSoles: resource.priceSoles,
+      secondPriceDollars: resource.secondPriceDollars ?? null,
+      secondPriceSoles: resource.secondPriceSoles ?? null,
       department: normalizedDepartment,
       district: normalizedDepartment === Department.LIMA ? normalizedDistrict : null,
       address: resource.address,
