@@ -394,9 +394,9 @@ export class NewPropertyDialogComponent implements AfterViewChecked, OnDestroy {
       return;
     }
 
-    if (plainTextForValidation.length > 1000) {
+    if (plainTextForValidation.length > 10000) {
       this.currentStep = 3;
-      this.errorMessage = 'La descripcion no puede superar 1000 caracteres.';
+      this.errorMessage = 'La descripcion no puede superar 10000 caracteres.';
       this.form.controls.description.markAsTouched();
       return;
     }
