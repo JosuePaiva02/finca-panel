@@ -1,5 +1,6 @@
 export enum District {
   ANCON = 'ANCON',
+  ASIA = 'ASIA',
   ATE = 'ATE',
   BARRANCO = 'BARRANCO',
   BRENA = 'BRENA',

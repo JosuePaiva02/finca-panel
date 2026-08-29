@@ -2,6 +2,7 @@ import { District} from './District.enum';
 
 export const DistrictLabel: Record<District, string> = {
   [District.ANCON]: 'Ancón',
+  [District.ASIA]: 'Asia',
   [District.ATE]: 'Ate',
   [District.BARRANCO]: 'Barranco',
   [District.BRENA]: 'Breña',
