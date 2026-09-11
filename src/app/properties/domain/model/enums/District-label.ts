@@ -17,6 +17,7 @@ export const DistrictLabel: Record<District, string> = {
   [District.JESUS_MARIA]: 'Jesús María',
   [District.LA_MOLINA]: 'La Molina',
   [District.LA_VICTORIA]: 'La Victoria',
+  [District.LINCE]: 'Lince',
   [District.LURIGANCHO]: 'Lurigancho',
   [District.LURIN]: 'Lurín',
   [District.MAGDALENA_DEL_MAR]: 'Magdalena del Mar',
